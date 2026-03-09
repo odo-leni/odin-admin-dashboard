@@ -385,9 +385,10 @@ body {
 .announcementDescription {
   margin: 0px;
   color: #999a9b;
-  font-size: .9em;
+  font-size: 0.9em;
   text-overflow: ellipsis;
   overflow: hidden;
+  overflow-inline: hidden;
   letter-spacing: -1px;
   flex-grow: 1;
   height: 25px;
@@ -416,4 +417,46 @@ body {
   flex: 1;
   margin: 0px;
   box-shadow: 0px 5px 5px 0px #999a9b;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-items: stretch;
+  margin: 5px;
+}
+
+.trendingAvatar {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.trendingUser {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+}
+
+.trendingUserEmail {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.trendingUserName {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.8rem;
+  color: #999a9b;
 }
