@@ -2,7 +2,8 @@
 
 :root {
   --system-ui:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    /*system-ui, "Segoe UI",*/ 
+    Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -94,6 +95,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
+  cursor: pointer;
 }
 
 .sidebarMenuItemIcon,
@@ -120,7 +122,7 @@ body {
   background-color: #ffffff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding: 15px 30px 0px 15px;
+  padding: 15px 30px 0px 30px;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 2fr;
@@ -245,7 +247,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.headerBottomButton{
+.headerBottomButton {
   border-radius: 18px;
   align-self: center;
   justify-self: center;
@@ -262,6 +264,96 @@ body {
   background-color: #e2e8f0;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  padding: 15px 10px;
+  padding: 15px;
   box-shadow: inset 0px 10px 20px -10px #999a9b;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.mainLeft {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  /*border: black solid 1px;*/
+}
+
+.mainLeftHeader {
+  margin: 15px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mainLeftContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardProject {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  grid-template-rows: 25px 90px 35px;
+  box-shadow: 0px 5px 5px 0px #999a9b;
+}
+
+.verticalLine {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  background-color: #f0b429;
+  justify-content: stretch;
+  width: 8px;
+  height: 150px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.carProjectHeader {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: start;
+}
+
+.carProjectDescription {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  height: 90px;
+  color: #999a9b;
+  margin: 0px 10px;
+  align-self: start;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -1px;
+}
+
+.projectButtons {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  margin: 0px 15px 0px 0px;
+}
+
+.projectButtonIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.mainTopRight {
+  border: black solid 1px;
+}
+
+.mainBottomRight {
+  border: black solid 1px;
 }
