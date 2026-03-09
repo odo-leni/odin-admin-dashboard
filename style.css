@@ -278,7 +278,7 @@ body {
 }
 
 .mainHeader {
-  margin: 15px 0px;
+  margin: 20px 0px 10px 0px;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -363,6 +363,43 @@ body {
   border-radius: 8px;
   flex: 1;
   margin: 0px;
+  box-shadow: 0px 5px 5px 0px #999a9b;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.announcementHeader {
+  margin: 0px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.announcementDescription {
+  margin: 0px;
+  color: #999a9b;
+  font-size: .9em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: -1px;
+  flex-grow: 1;
+  height: 25px;
+}
+
+.announcementSeparator {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 10px 0px;
+  padding: 0;
 }
 
 .mainBottomRight {
@@ -378,4 +415,5 @@ body {
   border-radius: 8px;
   flex: 1;
   margin: 0px;
+  box-shadow: 0px 5px 5px 0px #999a9b;
 }
